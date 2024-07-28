@@ -13,6 +13,7 @@ jobs:
     with:
       name: "currencyService"
       JOBID: "${{ github.run_number }}"
+      GITHUBSHA: "${{ github.sha }}"
     secrets:
       YC_SA_JSON_CREDENTIALS: ${{ secrets.YC_SA_JSON_CREDENTIALS }}
       REPO_NAME: ${{ secrets.REPO_NAME }}
